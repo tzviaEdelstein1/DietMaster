@@ -1,0 +1,14 @@
+<label>name</label>
+<p-autoComplete  [suggestions]="filteredProducts" (onSelect)="onChangeProduct()" (completeMethod)="filterProductsSingle($event)" field="name" [size]="30"
+     [minLength]="1"  [dropdown]="true" [(ngModel)]="dailyMenuNameProduct">
+   </p-autoComplete>
+   <label>measure</label>
+<select   [(ngModel)]="dailyMenu.idMeasure">
+  <option  *ngFor="let measure of measuresForProduct" 
+ name="measure" [value]="measure.id">{{measure.name}}</option>
+</select>
+<label>amount</label>
+<input  [disabled]="isDisabled()" (change)="calculateCalorieToProduct()" type="number"[(ngModel)]="dailyMenu.amount">
+<div *ngIf="!calculator"><button (click)=removeProduct()>remove</button></div>
+<div *ngIf="calculator"><h1>{{CalorieToProduct}}</h1>
+</div>

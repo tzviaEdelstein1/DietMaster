@@ -1,0 +1,19 @@
+<p>
+  define-exercize works!
+</p>
+
+  <form  #DefineExercizeForm="ngForm" class="form-horizontal" (ngSubmit)="onSubmit(DefineExercizeForm)">
+<span>I plan to</span>
+<select [(ngModel)]="exercizes.id" name="name" [(ngModel)]="dailyExercize.idExercize"  #idExercize="ngModel">
+<option *ngFor="let item of exercizes" [value]="item.id">
+  {{item.name}}
+</option>
+</select>
+<span>for</span><input type="number"[(ngModel)]="dailyExercize.duration"name="duration" #duration="ngModel">
+<span>minutes </span>
+<input type="number" [(ngModel)]=" dailyExercize.times"name="times"  #times="ngModel">
+<span>  per</span>
+<select [(ngModel)]="dailyExercize.per" name="per" #per="ngModel"><option>day</option><option>week</option></select>
+<button  type="submit" name="submit"  class="btn btn-danger">ok</button>
+
+</form>

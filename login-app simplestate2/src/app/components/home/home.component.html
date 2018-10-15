@@ -1,0 +1,797 @@
+
+<!-- <div style="size:100%;background-color: sandybrown">
+<p style="font-size: 80px">
+home works!
+</p>
+</div>
+<button (click)="login()">login</button>
+<button (click)="register()">register</button> -->
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="author" content="">
+
+    <title>Agency - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <!-- <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"> -->
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="css/agency.min.css" rel="stylesheet"> --> -->
+
+  </head>
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Formulas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Success Stories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Tips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Welcome To Diet Master!</div>
+          <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+          <button class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" (click)="login()">login</button>
+          <!-- <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a> -->
+        </div>
+      </div>
+    </header>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">formulas</h2>
+            <h3 class="section-subheading text-muted">The diet formulas our site is based on.</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <!-- <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i> -->
+              <img class="img-fluid" src="../../../assets/Images/img/SERVICES/1.gif" alt="">
+            </span>
+            
+            <h4 class="service-heading">Haris Bendikt</h4>
+            <p class="text-muted">The Harris–Benedict equation (also called the Harris-Benedict principle) is a method used to estimate an individual's basal metabolic rate</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <!-- <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-laptop fa-stack-1x fa-inverse"></i> -->
+              <img class="img-fluid" src="../../../assets/Images/img/SERVICES/2.gif" alt="">
+            </span>
+            <h4 class="service-heading">BMR</h4>
+            <p class="text-muted">Basal metabolic rate (BMR) is the rate of energy expenditure per unit time by endothermic animals at rest.[1] It is reported in energy units per unit time ranging from watt (joule/second) to ml O2/min or joule per hour per kg body mass J/(h·kg). Proper measurement requires a strict set of criteria be met</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <!-- <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-lock fa-stack-1x fa-inverse"></i> -->
+              <img class="img-fluid" src="../../../assets/Images/img/SERVICES/3.gif" alt="">
+            </span>
+            <h4 class="service-heading">BMI</h4>
+            <p class="text-muted">Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Success Stories</h2>
+            <h3 class="section-subheading text-muted">Our amazing success stories!</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+
+              <img class="img-fluid" src="../../../assets/Images/img/successStories/1.gif" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>
+                Hilary lost 77 kilos!</h4>
+              <p class="text-muted">Paris</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+           
+              <img class="img-fluid" src="../../assets/Images/img/successStories/2.gif" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Jan lost 81 kilos!</h4>
+              <p class="text-muted">Venezia</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+        
+              <img class="img-fluid" src="../../../assets/Images/img/successStories/3.gif" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Jessi lost 50 kilos!</h4>
+              <p class="text-muted">London</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>     
+              
+              <img class="img-fluid" src="../../assets/Images/img/successStories/4.gif" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>
+                Seth and Beverly lost 100 kilos!</h4>
+              <p class="text-muted">Suiss</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+ 
+              <img class="img-fluid" src="../../assets/Images/img/successStories/5.gif" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>
+                Stephanie lost 57 kilos!</h4>
+              <p class="text-muted">Japan</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+
+              <img class="img-fluid" src="../../assets/Images/img/successStories/6.gif" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>
+                Alex lost 45 kilos!</h4>
+              <p class="text-muted">New York</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Tips</h2>
+            <h3 class="section-subheading text-muted">Tips to make your diet successful!</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="../../assets/Images/img/about/18.gif" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Sport and exercize</h4>
+                    <!-- <h4 class="subheading"></h4> -->
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                        
+                        In fact, just 30 minutes of walking per day has been shown to aid in weight loss (8).
+                        
+                        Plus, it’s an enjoyable activity that you can do both indoors and outside at any time of day.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="../../assets/Images/img/about/21.gif" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Drink</h4>
+                    <!-- <h4 class="subheading">An Agency is Born</h4> -->
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">People sometimes confuse thirst with hunger. You can end up consuming extra calories when a glass of water is really what you need.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="../../assets/Images/img/about/19.gif" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Smart Shopping</h4>
+                    <!-- <h4 class="subheading">Transition to Full Service</h4> -->
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Creating a shopping list and sticking to it is a great way to avoid buying unhealthy foods impulsively.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="../../assets/Images/img/about/22.gif" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Fruits&Vegatables</h4>
+                    <!-- <h4 class="subheading">Phase Two Expansion</h4> -->
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Eating whole foods that don’t come with an ingredient list ensures that you are nourishing your body with natural, nutrient-dense foods.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>Good luck!</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="bg-light" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+            <h3 class="section-subheading text-muted">The people that will help you to use our site and be sucessful.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="../../assets/Images/img/team/1.jpg" alt="">
+              <h4>Kay Garland</h4>
+              <p class="text-muted">Senior Dietitian</p>
+              <span>email:1298827@gmail.com</span>
+              <!-- <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                    
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul> -->
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="../../assets/Images/img/team/2.jpg" alt="">
+              <h4>Larry Parker</h4>
+              <p class="text-muted">Secondary Dietitian</p>
+              <!-- <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul> -->
+              <span>email:463463474@gmail.com</span>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="../../assets/Images/img/team/3.jpg" alt="">
+              <h4>Diana Pertersen</h4>
+              <p class="text-muted">Nutritionist</p>
+              <!-- <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul> -->
+              <span>email:34635736@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <!-- <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients -->
+    <!-- <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <a href="#">              
+              <img class="img-fluid d-block mx-auto" src="../../assets/Images/img/logos/envato.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="../../assets/Images/img/logos/designmodo.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="../../assets/Images/img/logos/themeforest.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="#">
+              <img class="img-fluid d-block mx-auto" src="../../assets/Images/img/logos/creative-market.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Contact Us</h2>
+            <h3 class="section-subheading text-muted">We will be happy to read and answer your messages!</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form id="contactForm" name="sentMessage" novalidate="novalidate" class="error">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group error">
+                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." aria-invalid="true">
+                    <!-- <p class="help-block text-danger"><ul role="alert"><li>Please enter your name.</li></ul></p> -->
+                  </div>
+                  <div class="form-group error">
+                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address." aria-invalid="true">
+                    <!-- <p class="help-block text-danger"><ul ><li>Please enter your email address.</li></ul></p> -->
+                  </div>
+                  <div class="form-group error">
+                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." aria-invalid="true">
+                    <!-- <p class="help-block text-danger"><ul role="alert"><li>Please enter your phone number.</li></ul></p> -->
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message." aria-invalid="false"></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                  <div id="success"></div>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright © Diet Mater 2018</span>
+          </div>
+          <div class="col-md-4">
+            <!-- <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul> -->
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Hilary lost 77 kilos!</h2>
+                  <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                  <img class="img-fluid d-block mx-auto" src="../../assets/Images/img/successStories/1.gif" alt="">
+                  <p>When I lost my 60-year-old father in May of 2011, I knew it was finally time for me to get healthy. My father was first diagnosed with heart problems around age 34, and I could see that I was going down a similar path that could possibly lead to heart disease and type 2 diabetes. My husband suggested the Mayo Clinic Diet as a way to get started. It seemed so straightforward, and since I had no interest in calculating and adding up "points," I decided to give it a try. After losing my dad, I was determined to find a long-term solution, not a quick fix. I dropped about 10 kilos during the Lose It! phase by adopting (and breaking) the habits outlined in the book. After seeing the changes that occurred in just two weeks, I was completely sold and have been following the Mayo Clinic Diet ever since.
+
+                    By sticking to the Live It! principles of the diet, I have lost and kept off 45 kilos. My health has improved greatly, and there are no concerns or red flags for heart disease or type 2 diabetes, which is a giant relief!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Threads</li>
+                    <li>Category: Illustration</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Jan lost 81 kilos!</h2>
+                  <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+
+                  <img class="img-fluid d-block mx-auto" src="../../assets/Images/img/successStories/2.gif" alt="">
+                  <p>I had reached a point at which I’d given up and accepted that I was going to be fat for the rest of my life. I bought into a lot of marketing about "loving the skin you're in." This is a positive message, but I realized that it doesn't mean it's OK to be unhealthy. In September 2012, I started thinking more about how my health would impact my children. I wanted to be a positive role model, and I felt like a hypocrite telling my kids to eat healthy when I wasn't doing it myself. I also realized that after I'm gone all they would have to remember me by are pictures of my hand over my face trying to avoid the camera. So when I heard about the Mayo Clinic Diet, I knew I had to do something!
+
+                    Before starting the Mayo Clinic Diet, I was very sedentary. I had all the excuses: no time, no energy and so on. Until you really make [your health] a priority, you will continue to have excuses. I started doing squats while waiting for my dogs to eat and taking the stairs instead of the elevator. Five minutes here, five minutes there — it adds up. The more you do, the better you feel. I used to eat a lot of sugar, and I had no sense of portion control. What I immediately liked about the diet is that it's really about common sense; it's clear how many servings of each food you should have each day.
+                    
+                    I lost 27 kilos in the first 12 weeks, although I will admit that the beginning of Lose It! was incredibly hard. I followed the mantra: "You can do anything for two weeks," and, little by little, it became easier. I don't even consider myself on a diet anymore. This is just my lifestyle, and I don't even think about it. I no longer want to eat like I used to. If I crave something, I have it — just in a reasonable portion and not all the time.
+                    
+                    Aside from my 77-pound weight loss, helping my children develop healthy habits they enjoy has been the biggest reward. We talk about wanting to be healthy and why we should exercise, and that is important. I have even coached their soccer teams for two years now, which is something I would not have signed up for in a million years prior to becoming healthier!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Explore</li>
+                    <li>Category: Graphic Design</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Jessi lost 50 kilos!</h2>
+                  <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                  <img class="img-fluid d-block mx-auto" src="../../assets/Images/img/successStories/3.gif" alt="">
+                  <p>Although their initial motivation to lose weight came from different experiences, Seth and Beverly have a common goal: to be healthier and grow old together without worrying about being at risk of diabetes and other health-related issues later in life. Through the Mayo Clinic Diet, this married couple regained their health, confidence and identities — and lost almost 100 kilos in the process!
+
+                    "Before the Mayo Clinic Diet, my eating habits were much more of a roller coaster," Seth says. And since Beverly worked from home, she and Seth often ate at restaurants as an excuse to get out of the house. "For the most part, our diet lacked many important aspects of the food pyramid, especially the fruit and vegetable category," Seth admits about their old high-carb, high-fat diet.
+                    
+                    Now, Seth and Beverly incorporate whole grains and lean meats and at least one serving of both fruits and vegetables into every meal, and they also share entrees when dining out. "I was never a big vegetable eater, but since starting the Mayo Clinic Diet, I have found that it's all about how these foods are prepared," Beverly says. "I love zucchini, squash and broccoli, and a few years ago I wouldn't even try them!"
+                    
+                    The couple's new healthy eating habits soon inspired changes with exercise. Before starting the diet, Seth says, the couple was "much more sedentary and watched TV or played games inside rather than getting out and doing something active." Now? "Finally, exercise has really been ingrained in our lives. We work out together and take part in activities, like inline skating and running." The fit pair has also participated in a number of 5K races!
+                    
+                    Seth and Beverly can now look to their future with assurance. "We will continue to eat a variety of foods from the different food groups, along with maintaining an active lifestyle," Beverly says. "The Mayo Clinic Diet gave us a road map, and now we need to just stay the course."</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Finish</li>
+                    <li>Category: Identity</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Seth and Beverly lost 100 kilos!</h2>
+                  <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                  <img class="img-fluid d-block mx-auto" src="../../assets/Images/img/successStories/4.gif" alt="">
+                  <p>I have been active most of my life, and I always considered myself to be healthy. However, I slowly picked up poor dietary habits, which left me constantly feeling too tired to exercise, and I made up for it by eating even more. It was a vicious circle, and my business suits were about as tight as they could get. When I stepped on the scale, I realized I weighed 212 kilos. Ugh! I was motivated to lose weight and get healthy again by a combination of life events. I got a serious wake-up call when I developed a major blood clot in my leg, followed by a diagnosis of low-grade hypertension, prediabetes and a heart arrhythmia. I thought I was in good health, but in reality I was not.
+
+                    I started the Mayo Clinic Diet and initially set a goal of dropping 25 kilos, which I surpassed in the first six weeks! I continued to lose weight, and my sleep, blood pressure and heart rate improved, too. I have noticeably more energy and just feel good most of the time.
+                    
+                    Before the Mayo Clinic Diet, I ate whatever was appealing to me and paid little attention to portion control. Now I eat a well-balanced breakfast every day, and I'm very aware of the amount of sugar — particularly processed sugar — in foods and avoid it as much as I can. I also eat more fruits and vegetables, and the Mayo Clinic Diet taught me how to visually gauge portions better.
+                    
+                    I am now at the weight I carried when I was a captain on active duty in the Marine Corps. I have begun to buy new clothes in sizes I never thought I would see again, and my “fat pants” are in storage. The Mayo Clinic Diet helped me change my life!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Lines</li>
+                    <li>Category: Branding</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Stephanie lost 57 kilos!</h2>
+                  <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                  <img class="img-fluid d-block mx-auto" src="../../assets/Images/img/successStories/5.gif" alt="">
+                  <p>Two days after my third child was born, my beloved father died suddenly from a brain aneurism. He was my best friend, and his passing was an extreme blow to my heart. But my newborn son needed my energy and attention. I realized I could choose depression and darkness — which, truthfully, is what I wanted — or I could choose light and love for my new son. I chose the latter.
+
+                    Through this struggle I found myself lacking the energy I needed to take care of my family. I had always wanted to be an active mom, but feeling so heavy — both in my heart and my body — left me wondering how I could do it. On top of these challenges, life threw me another curveball: My seven-year-old daughter was diagnosed with type 1 diabetes. I had to contend with a new life of weighing food, counting carbs, reading labels, tracking blood-sugar numbers, and many, many needles. I was now the warrior, the mommy, the doctor, the nurse, the boss, and I was determined to nail it.
+                    
+                    My closest friend and supporter during this time in my life was my aunt. She gave me a book on the Mayo Clinic Diet. It taught me about portion sizes and sensible eating, but I found the magic was in the food journal. The journaling changed my life and helped me understand that food is to be used for fuel, not comfort. With this realization, I started to lose weight.
+                    
+                    Before I started the diet, I was comfort-eating in the evening after the kids went to bed, and I wasn’t very active. Changing those lifestyle habits helped me lose weight. Now I eat light and healthy throughout the day and little to nothing after 7 p.m. And I’m consciously active every single day. During the early years of my daughter's diabetes, she wanted to take taekwondo, and I wanted to encourage anything bright and positive. When I brought her to her first lesson, I was bored sitting and watching, so I signed up, too. Who knew I'd become a ninja — and eventually a yoga teacher!
+                    
+                    The information I learned from the Mayo Clinic Diet is now imprinted onto my everyday life. Once you learn it, you can’t forget it, and you experience a life change that involves conscious awareness — rather than a “diet” that starts and ends. I’m proud to say that I have been able to keep the 57 kilos off for eight years with these healthy habits!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Southwest</li>
+                    <li>Category: Website Design</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Alex lost 45 kilos!</h2>
+                 
+
+                  <!-- <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p> -->
+                  <img class="img-fluid d-block mx-auto" src="../../assets/Images/img/successStories/6.gif" alt="">
+                  <p>I have a strong family history of diabetes, and I was headed on the same path when my blood-sugar levels started steadily climbing. However, my true wake-up call came in 2007 when I had a hysterectomy. The extra weight I carried made the healing of my surgical wound take a lot longer, and keeping the wound clean was quite a difficult task. I was disgusted with myself, but I felt more determined than ever to lose weight and improve my health.
+
+                    I had been successful at losing weight before — but never at keeping it off. Once I hit a goal weight, the kilos inevitably came back. This time around, I knew I needed a different approach. On the Mayo Clinic Diet, I learned how to change not only what I ate, but how I ate and how I felt about food. Prior to starting the program, I never allowed myself to feel hunger. I almost always ate second helpings at every meal, and I ate sweets when I was bored. For the first time ever, thanks to the diet, I learned how to become aware of the feeling of satiety and never eat past a certain level of feeling "full." I stopped eating fast food. I stopped drinking carbonated beverages in favor of water. While following the diet, I learned that each and every day (maybe each hour) is a chance to start over.
+                    
+                    Before I started the Mayo Clinic Diet, I was depressed and always tired. I never wanted to try anything new, and I had resolved myself to the "fact" that I would always be obese. In two years, I lost 105 kilos and went from a size 24 to a size 10, my blood sugar went from 101 to 93, and I can proudly say that I have completed two half-marathons!
+                    
+                    With the Mayo Clinic Diet, I learned behavior modifications and tools to help me sustain a healthy lifestyle for the rest of my life. The information helped me face the issues that led me to overeat, and that was the help I needed. My self-esteem and confidence levels are so much better than before!</p>
+                  <ul class="list-inline">
+                    <li>Date: January 2017</li>
+                    <li>Client: Window</li>
+                    <li>Category: Photography</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+
+    <script src="../../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../../assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="../../assets/js/jqBootstrapValidation.js"></script>
+    <script src="../../assets/js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../../assets/js/agency.min.js"></script>
+
+  
+
+
+</body>
+
+<script src="../../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="../../assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="../../assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Contact form JavaScript -->
+<script src="../../assets/js/jqBootstrapValidation.js"></script>
+<script src="../../assets/js/contact_me.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="../../assets/js/agency.min.js"></script>
+

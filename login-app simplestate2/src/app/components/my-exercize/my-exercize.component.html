@@ -1,0 +1,64 @@
+<!-- <p>
+  my-exercize works!
+</p>
+
+ <form  #DefineExercizeForm="ngForm" class="form-horizontal" (ngSubmit)="onSubmit(DefineExercizeForm)">
+    <span>I did</span>
+    <select [(ngModel)]="exercizes.id" name="name" [(ngModel)]="MyExercize.idExercize"  #idExercize="ngModel">
+    <option *ngFor="let item of exercizes" [value]="item.id">
+      {{item.name}}
+    </option>
+    </select>
+    <span>for</span><input type="number"[(ngModel)]="MyExercize.duration"name="duration" #duration="ngModel">
+    <span>minutes </span>
+    <input type="number" [(ngModel)]=" MyExercize.times"name="times"  #times="ngModel">
+    <span>  per</span>
+    <select [(ngModel)]="MyExercize.per" name="per" #per="ngModel"><option>day</option><option>week</option></select>
+    <button  type="submit" name="submit"  class="btn btn-danger">ok</button>   
+    </form> 
+     <div *ngIf="isStandart">
+        <div class="form-group">
+          
+           
+              <input type="button" value="+" name={{item.meal.name}} (click)="changeShow(item.meal.id)">{{item.meal.name}}
+              <div *ngFor="let product of item.products ;let i=index">
+                <app-new-exercize (elementDeleted)="onElementDeletedDailyMenu(product)" [dailyMenuNameProduct]="map.get(product.idProduct)" [dailyMenu]="product"></app-new-exercize>
+              </div>
+           
+         
+        </div> 
+         <button (click)="save()">Save</button>
+        </div>
+        <div *ngIf="!isStandart">
+            <div class="form-group">
+             
+                  <input type="button" value="+"  (click)="changeShow()">
+                  <div *ngFor="let product of item.products;let i=index" > 
+                   <app-new-exercize (elementDeleted)="onElementDeletedIAte(product)" [dailyMenuNameProduct]="map.get(product.idProduct)" [dailyMenu]="product"></app-new-exercize>
+              
+            </div> 
+            <button (click)="save()" >Save</button>
+            </div>  -->
+            <P>HELLO</P>
+
+            <div *ngIf="isStandart">
+              yes standart
+              <div class="form-group">                  
+                    <input type="button" value="+" name=addExercize (click)="changeShow()">add Exercize
+                    <div *ngFor="let item of DailyExercize;let i=index" > 
+                     <app-new-exercize (elementadded)="onElementAdded()"(elementDeleted)="onElementDeletedDailyExercize(item)" [ExercizeId]="map.get(item.idExercize)" [MyExercize]="item"></app-new-exercize>
+                    </div>            
+              </div>     
+              </div>
+              <div *ngIf="!isStandart">
+                no standart
+                  <div class="form-group">                  
+                        <input type="button" value="+" name=addExercize (click)="changeShow()">add Exercize
+                        <div *ngFor="let item of MyExercizes;let i=index" > 
+                         <app-new-exercize (elementadded)="onElementAdded()"(elementDeleted)="onElementDeletedMyExercize(item)" [ExercizeId]="map.get(item.idExercize)" [MyExercize]="item"></app-new-exercize>
+                        </div>            
+                  </div>                 
+                  </div>
+
+              
+              

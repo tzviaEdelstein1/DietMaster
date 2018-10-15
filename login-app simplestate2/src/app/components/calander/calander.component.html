@@ -1,0 +1,40 @@
+
+<div class="warpper">
+        <app-menu></app-menu>
+<div class="row">
+    
+</div>
+<div id="centerPge">
+        <div class="row">
+    
+            
+<div class="col-md-6" id="navigateButtones">
+        <div class="btn-group">
+            <button class="btn btn-primary" (click)="decrement()" [disabled]="prevBtnDisabled">
+                Previous
+            </button>
+            <button class="btn btn-outline-secondary" (click)="today()">
+                Today
+            </button>
+            <button class="btn btn-primary" (click)="increment()" [disabled]="nextBtnDisabled">
+                Next
+            </button>
+        </div>
+    </div>
+    <div class="col-md-6" id="titleDate">
+        <h3>{{ viewDate | calendarDate:(view + 'ViewTitle'):'en' }}</h3>
+    </div></div>
+<!-- <mwl-calendar-month-view *ngSwitchCase="'month'" [viewDate]="viewDate" [events]="events" [refresh]="refresh" [activeDayIsOpen]="activeDayIsOpen"
+        (dayClicked)="dayClicked($event.day)" (eventClicked)="handleEvent('Clicked', $event.event)" (eventTimesChanged)="eventTimesChanged($event)">
+        <mwl-calendar-month-view *ngSwitchCase="'month'" [viewDate]="viewDate" [events]="events" [activeDayIsOpen]="activeDayIsOpen"
+        > -->
+<div id="calander">
+<mwl-calendar-month-view  [viewDate]="viewDate" [events]="events" [refresh]="refresh"  (dayClicked)="dayClicked($event.day)"
+    (eventClicked)="handleEvent('Clicked', $event.event)" (beforeViewRender)="beforeMonthViewRender($event)">
+</mwl-calendar-month-view>
+</div>
+</div>
+
+<div id="message" *ngIf="message!=''">
+    <span>{{message}}</span>
+</div></div>

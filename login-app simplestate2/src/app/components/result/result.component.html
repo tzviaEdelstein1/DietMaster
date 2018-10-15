@@ -1,0 +1,15 @@
+<form>
+    <div *ngIf="fromMenu"><button (click)="cancelFunc()">x</button></div>
+  <span> You have to eat</span>
+  {{bmr}}
+  <h1>Welcome to Diet Master!</h1>
+  <p>These are the results of the data you entered so far.
+      According to which you should manage your new diet.
+      The system has carried out many studies in order to reach the most accurate and latest version and is based on the largest number of personal data
+        To make it easier for you to fill the menu daily, click here to set up a standard menu that will guide you through the entire diet.
+      Of course you can change every day as needed</p>
+  <span></span>
+  <h1>Recomended calories</h1>
+  <span>calories every day in order to reach your goal</span>
+  <button (click)="openDefineMenueModal()">Define standart menu</button>
+</form>

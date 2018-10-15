@@ -1,0 +1,53 @@
+<!-- <p>
+  nutritio-calculator works!
+</p> -->
+<!-- <select  [(ngModel)]="selectionProduct" (change)="onChangeProduct()">
+  <option  *ngFor="let product of products" [ngValue]="product" >{{product.name}}</option>
+
+</select>
+
+
+
+<select [(ngModel)]="idProduct" (change)="onChangeProduct()">
+  <option  *ngFor="let product of products" [value]="product.id" >{{product.name}}</option>
+</select>
+<select [(ngModel)]=iidMeasure >
+  <option  *ngFor="let measure of measuresForProduct;let in=index" [(ngModel)]="measuresForProduct[in]" [value]="measure.id">{{measure.name}}</option>
+</select>
+<input type="number"[(ngModel)]="amount">
+<input type="button" (click)="calculateCalorios()" value="add to calculate">
+
+<p>the calorios in this product<span>{{calorios}}</span> </p>
+<p>the calorios in all the product<span>{{allCalorios}}</span> 
+  <table>
+      <tr>
+          <th>delete </th>
+          <th> name product </th> 
+          <th> amount </th>
+          <th> calorios in product</th>
+        </tr>
+        <tr *ngFor="let product of productsInTable">
+<td></td>
+<td></td>
+<td></td>
+<td></td></tr>
+  </table> -->
+  <button (click)="cancelFunc()">x</button>
+  <h1 style="font-size: 50px">nutiration calculator</h1>
+  <div *ngIf="isStandart">
+  <div class="form-group">
+    <ul>
+      <li *ngFor="let item of productsOfMeals">
+        <input type="button" value="start" name={{item.meal.name}} (click)="changeShow(item.meal.id)">
+        <div *ngFor="let product of item.products ;let i=index">
+          <app-new-product [calculator]="true" (elementadded)="onElementAddedDailyMenu($event)" (elementDeleted)="onElementDeletedDailyMenu(product)" [dailyMenuNameProduct]="map.get(product.idProduct)" [dailyMenu]="product"></app-new-product>
+        </div>
+      </li>
+    </ul>
+  </div> 
+  </div>
+
+  
+  
+  
+  

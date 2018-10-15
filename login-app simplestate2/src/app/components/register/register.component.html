@@ -1,0 +1,53 @@
+<!-- 
+<form #RegisterForm="ngForm" class="form-horizontal" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <br />
+    <button  type="submit" name="submit"  class="btn btn-danger">register</button>
+</div>
+      <div class="form-group">
+        <label for="name">Email</label> 
+         <input type="email" name="email" class="form-control" required [(ngModel)]="myUser.email" #email="ngModel" /> <br />
+        <br /> 
+        </div>
+        <div class="form-group">
+          <label for="name">first name</label> 
+           <input type="text" name="firstName" class="form-control" required [(ngModel)]="myUser.firstName" #firstName="ngModel" /> <br />
+          <br /> 
+          </div>
+          <div class="form-group">
+            <label for="name">lastName</label> 
+             <input type="email" name="" class="form-control" required [(ngModel)]="myUser.lastName" #lastName="ngModel" /> <br />
+            <br /> 
+            </div>
+            <div class="form-group">
+              <label for="name"></label> 
+               <input type="password" name="password" class="form-control" required [(ngModel)]="myUser.password" #password="ngModel" /> <br />
+              <br /> 
+              </div>
+              <div class="form-group">
+                <label for="name">born date</label> 
+                 <input type="date" name="BornDate" class="form-control" required [(ngModel)]="myUser.BornDate" #BornDate="ngModel" /> <br />
+                <br /> lastName
+                </div>password
+ 
+</form> -->
+
+<div class="testbox">
+  <h1>Registration</h1>
+
+  <form #RegisterForm="ngForm" (ngSubmit)="onSubmit()">
+  <hr>
+  <label id="icon" for="firstName"><i class="icon-envelope "></i></label>
+  <input type="text" name="firstName" required placeholder="first name"[(ngModel)]="myUser.firstName" #firstName="ngModel" /> <br />
+  <label id="icon" for="lastName"><i class="icon-user"></i></label>
+  <input type="text" name="lastName" required [(ngModel)]="myUser.lastName"placeholder="lastName" #lastName="ngModel" /> <br />
+  <label id="icon" for="BornDate"><i class="icon-user"></i></label>
+  <input type="date" name="BornDate"  required [(ngModel)]="myUser.BornDate" #BornDate="ngModel" /> <br />
+  <label id="icon" for="email"><i class="icon-shield"></i></label>
+  <input type="email" name="email"  required [(ngModel)]="myUser.email" #lastName="ngModel" placeholder="Email"/> <br />
+  <label id="icon" for="password"><i class="icon-shield"></i></label>
+  <input type="password" name="password"  placeholder="password" required [(ngModel)]="myUser.password" #password="ngModel" /> <br />
+   <p>By clicking Register, you agree on our <a  routerLink="/login">have an account? sign in</a>.</p>
+   <input type="submit"class="button" value="Register next step">
+  </form>
+</div>

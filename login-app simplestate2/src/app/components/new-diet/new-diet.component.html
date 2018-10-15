@@ -1,0 +1,55 @@
+<!-- <p>
+  new-diet works!
+</p>
+<form #newDietForm="ngForm" class="form-horizontal" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <br />
+    <button type="submit" name="submit"  class="btn btn-danger">ok</button>   
+</div>
+      <div class="form-group">
+        <label for="name">Date Start</label> 
+         <input type="text" placeholder="{{newDiet.startDate|date}}"name="startDate" class="form-control" required /> <br />
+        <br />     
+        </div>
+        <div class="form-group">
+          <label for="name">Date End</label> 
+           <input type="date"  name="endDate" class="form-control" required [(ngModel)]="newDiet.endDate" #endDate="ngModel" /> <br />
+          <br/>         
+          </div>
+        <div class="form-group">
+          <label for="name">Target Weight</label> 
+           <input type="text" name="targetWeight" placeholder="{{newDiet.targetWeight}}" class="form-control" required [(ngModel)]="newDiet.targetWeight" #targetWeight="ngModel" /> <br />
+          <br />   
+          </div>
+          <div class="form-group">
+              <label for="name">I want to reach my goal in</label> 
+               <input type="number" name="duration"  class="form-control" required [(ngModel)]="duration"/>
+               <label>days</label>
+               <br/>
+              </div>       
+</form>
+ -->
+
+<div class="testbox">
+  <h1>New Diet</h1>
+
+  <form #newDietForm="ngForm"  (ngSubmit)="onSubmit()">
+  <hr>
+  <label for="startDate">start Date</label><br/>
+  <label id="icon" for="startDate"><i class="icon-envelope "></i></label>
+  <input type="text"disabled  placeholder="{{newDiet.startDate|date}}"name="startDate" required />  <br />
+  
+  <label id="icon" for="targetWeight"><i class="icon-user"></i></label> 
+  <input type="text" name="targetWeight" placeholder="targetWeight"  required [(ngModel)]="newDiet.targetWeight" #targetWeight="ngModel" /> <br />
+  <label for="endDate">end date</label><br/>
+  <label id="icon" for="endDate"><i class="icon-user"></i></label>
+  <input type="date" name="endDate" placeholder="endDate"  [(ngModel)]="newDiet.endDate" #endDate="ngModel" /> <br />
+  <label for="name">I want to reach my goal in</label><br/>  
+  <label id="icon" for="duration"><i class="icon-shield"></i></label>
+  <input type="number" name="duration" [(ngModel)]="duration"/><br/>
+  <label for="duration">days</label><br/>
+
+   <input type="submit"class="button" value="new Diet next step" [disabled]="!newDietForm.valid">
+
+  </form>
+</div>

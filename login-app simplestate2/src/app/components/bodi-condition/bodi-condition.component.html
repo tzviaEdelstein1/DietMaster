@@ -1,0 +1,59 @@
+<!-- 
+<form #bodiConditionForm="ngForm" class="form-horizontal" (ngSubmit)="onSubmit(bodiConditionForm)">
+  
+      <div class="form-group">
+        <label for="name">height</label> 
+        <input type="number" name="height" class="form-control" required [(ngModel)]="bodi_condition.height" #height="ngModel" /> <br />
+        <br />       
+        </div>
+          <div class="form-group">
+            <label for="name">weight</label> 
+             <input type="number" name="weight" class="form-control" required [(ngModel)]="bodi_condition.weight" #weight="ngModel" /> <br />
+            <br />          
+            </div>
+            <div class="form-group">
+              <label  for="name">gender</label>
+              <select name="gender"  required [(ngModel)]="bodi_condition.gender" #gender="ngModel" >
+                <option>male</option>
+                <option>female</option>
+              </select>            
+              </div>             
+            <div class="form-group">
+              <label for="name">age</label> 
+               <input type="text" name="age" class="form-control" required  placeholder="{{age}}" [(ngModel)]="age"/> <br />
+              <br /> 
+              </div>
+      <div class="form-group">
+      <br /> 
+      <button [disabled]="!bodiConditionForm.valid" type="submit" name="submit"  class="btn btn-danger">ok</button>
+      </div>
+</form> -->
+
+<div class="testbox">
+  <h1>Body condition</h1>
+
+  <form #bodiConditionForm="ngForm" (ngSubmit)="onSubmit(bodiConditionForm)">
+     <div *ngIf="fromMenu"><button (click)="cancelFunc()">x</button></div>
+  <hr>
+  <label id="icon" for="height"><i class="icon-envelope "></i></label>
+  <input type="number" name="height" placeholder="height" required [(ngModel)]="bodi_condition.height" #height="ngModel" /> <br />
+  <label id="icon" for="weight"><i class="icon-user"></i></label>
+  <input type="number" name="weight" placeholder="weight" required [(ngModel)]="bodi_condition.weight" #weight="ngModel" /> <br />
+ 
+  <label id="icon" for="age"><i class="icon-user"></i></label>
+  <input type="number" name="age" required  placeholder="age" [(ngModel)]="age"/> <br />
+  <div class="gender">
+    <input type="radio"  id="male" name="gender"   [(ngModel)]="bodi_condition.gender" #gender="ngModel" />
+    <label for="male" class="radio" >Male</label>
+    <input type="radio"  id="female" name="gender"  [(ngModel)]="bodi_condition.gender" #gender="ngModel" />
+    <label for="female" class="radio">Female</label>
+   </div> 
+  <!-- <label id="icon" for="email"><i class="icon-shield"></i></label>
+  <input type="email" name="email"  required [(ngModel)]="myUser.lastName" #lastName="ngModel" placeholder="Email"/> <br />
+  <label id="icon" for="password"><i class="icon-shield"></i></label>
+  <input type="password" name="password"  placeholder="password" required [(ngModel)]="myUser.password" #password="ngModel" /> <br />
+   <p>By clicking Register, you agree on our <a href="#">terms and condition</a>.</p> -->
+   <div *ngIf="!fromMenu">  <input type="submit"class="button" value="next step"  name="submit"[disabled]="!bodiConditionForm.valid"></div>
+   <div *ngIf="fromMenu">  <input type="submit"class="button" value="save"  name="submit"[disabled]="!bodiConditionForm.valid"></div>
+  </form>
+</div>

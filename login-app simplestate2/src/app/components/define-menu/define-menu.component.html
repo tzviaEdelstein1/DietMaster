@@ -1,0 +1,44 @@
+<h1>{{date| date: 'dd/MM/yyyy'}}</h1>
+<button (click)="cancelFunc()">x</button>
+<div *ngIf="!saveStandart">
+  <h1 style="font-size: 50px">what have you eaten today?</h1>
+</div>
+<div *ngIf="saveStandart">
+    <h1 style="font-size: 50px">Define your standart menu</h1>
+  </div>
+<div *ngIf="warning" style="background-color: red">{{warningMessage}}</div>
+<div *ngIf="isStandart">
+<div class="form-group">
+  <ul>
+    <li *ngFor="let item of productsOfMeals">
+      <input type="button" value="+" name={{item.meal.name}} (click)="changeShow(item.meal.id)">{{item.meal.name}}
+      <div *ngFor="let product of item.products ;let i=index">
+        <app-new-product [calculator]="false" (elementadded)="onElementAddedDailyMenu($event)" (elementDeleted)="onElementDeletedDailyMenu(product)" [dailyMenuNameProduct]="map.get(product.idProduct)" [dailyMenu]="product"></app-new-product>
+      </div>
+    </li>
+  </ul>
+</div> 
+ <button (click)="save()">Save</button>
+</div>
+<div *ngIf="!isStandart">
+    <div class="form-group">
+      <ul>
+        <li  *ngFor="let item of ProductOfMealIAte">
+          <input type="button" value="+" name={{item.meal.name}} (click)="changeShow(item.meal.id)">{{item.meal.name}}
+          <div *ngFor="let product of item.products;let i=index" > 
+           <app-new-product [calculator]="false" (elementadded)="onElementAddedIAte($event)"(elementDeleted)="onElementDeletedIAte(product)" [dailyMenuNameProduct]="map.get(product.idProduct)" [dailyMenu]="product"></app-new-product>
+          </div>
+        </li>
+      </ul>
+    </div> 
+    <button (click)="save()" >Save</button>
+    </div>
+<h1>in this day you add meantime
+
+<div [(ngModel)]="sumCalorisForDay">{{sumCalorisForDay}}</div></h1>
+<span>calories</span>
+<span>You sould eat: </span><div [(ngModel)]="recomendedCalories">{{recomendedCalories}}</div>
+<span>calories every day</span>
+
+
+
